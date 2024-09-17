@@ -93,9 +93,10 @@
             label3.AutoSize = true;
             label3.Location = new Point(29, 144);
             label3.Name = "label3";
-            label3.Size = new Size(38, 20);
+            label3.Size = new Size(60, 20);
             label3.TabIndex = 4;
-            label3.Text = "Cost";
+            label3.Text = "Cost ($)";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
@@ -120,9 +121,9 @@
             label6.AutoSize = true;
             label6.Location = new Point(29, 335);
             label6.Name = "label6";
-            label6.Size = new Size(115, 20);
+            label6.Size = new Size(162, 20);
             label6.TabIndex = 7;
-            label6.Text = "Battery capacity";
+            label6.Text = "Battery capacity(mA/h)";
             // 
             // groupBox1
             // 

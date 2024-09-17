@@ -54,5 +54,10 @@ namespace Laba33
         {
             DialogResult = DialogResult.Cancel;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
