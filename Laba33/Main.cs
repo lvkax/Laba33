@@ -15,7 +15,9 @@ namespace Laba33
 
             if (fp.ShowDialog() == DialogResult.OK)
             {
-                textBox1.Text = string.Format("амамоам");
+                tbPhonesInfo.Text = string.Format($"Firm:{phone.Name}; Model:{phone.Model}; Cost:{phone.Cost}$; Release year:{phone.ReleaseYear};" +
+                    $"Guarantee ending:{phone.GaranteEndingYear}; Battery capacity:{phone.BatteryCapacity} mA/h;",
+                    phone.Has3Cameras ? "Має три камери; " : "Не має три камери; ", phone.HasWirelessCharging ? "Є бездротова зарядка; " : "Немає бездротової зарядкиж; \n\n");
             }
         }
 

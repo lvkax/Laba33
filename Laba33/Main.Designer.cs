@@ -28,12 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            tbPhonesInfo = new TextBox();
+            btnAddPhone = new Button();
+            btnClose = new Button();
+            SuspendLayout();
+            // 
+            // tbPhonesInfo
+            // 
+            tbPhonesInfo.Location = new Point(12, 12);
+            tbPhonesInfo.Multiline = true;
+            tbPhonesInfo.Name = "tbPhonesInfo";
+            tbPhonesInfo.ReadOnly = true;
+            tbPhonesInfo.Size = new Size(646, 426);
+            tbPhonesInfo.TabIndex = 0;
+            // 
+            // btnAddPhone
+            // 
+            btnAddPhone.Location = new Point(664, 12);
+            btnAddPhone.Name = "btnAddPhone";
+            btnAddPhone.Size = new Size(124, 29);
+            btnAddPhone.TabIndex = 1;
+            btnAddPhone.Text = "Add phone";
+            btnAddPhone.UseVisualStyleBackColor = true;
+            btnAddPhone.Click += btnAddPhone_Click;
+            // 
+            // btnClose
+            // 
+            btnClose.Location = new Point(664, 409);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(124, 29);
+            btnClose.TabIndex = 2;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
+            // 
+            // Main
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            Controls.Add(btnClose);
+            Controls.Add(btnAddPhone);
+            Controls.Add(tbPhonesInfo);
+            MaximizeBox = false;
+            Name = "Main";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Laboratory work №3";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+        private Button btnAddPhone;
+        private Button btnClose;
+        public TextBox tbPhonesInfo;
     }
 }
